@@ -16,12 +16,8 @@ typedef NS_ENUM(NSInteger, XXImageResourceType) {
 - (void)didSelectItemAtIndex:(NSUInteger)index;
 @end
 @interface XXLoopViewCell: UICollectionViewCell
-//@property (nonatomic, strong) NSString *imageName;
 - (void)configureImageWithName:(NSString *)imageName Type:(XXImageResourceType)type;
-
 @end
-
-
 
 @interface XXLoopView : UIView
 @property (nonatomic, weak) id<XXLoopViewDelegate> delegate;
